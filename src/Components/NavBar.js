@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+const Navbar = () => {
   return (
-    <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
             <Link to="/" className="navbar-brand">
@@ -17,23 +16,22 @@ const NavBar = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link">
+                        <Link to="/About" className="nav-link">
                             About
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link">
+                        <Link to="/Contact" className="nav-link">
                             Contact
                         </Link>
                     </li>
                 </ul>
-                <Link className="btn btn-primary" to="/login">Login</Link>
-                <Link className="btn btn-primary" to="/signup">Signup</Link>
+                <Link className="btn btn-primary" to="/Login">Login</Link>
+                <Link className="btn btn-primary" to="/Signup">Signup</Link>
             </div>
         </div>
     </nav>
-    </>
   );
 }
 
-export default NavBar;
+export default Navbar;
